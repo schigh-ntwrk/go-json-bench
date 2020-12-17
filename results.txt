@@ -1,0 +1,35 @@
+go test -count=5 -run=NONE -bench . -benchmem
+goos: darwin
+goarch: amd64
+BenchmarkHTTPUnmarshal-12            	   18296	     65289 ns/op	    5544 B/op	      69 allocs/op
+BenchmarkHTTPUnmarshal-12            	   18385	     64978 ns/op	    5545 B/op	      69 allocs/op
+BenchmarkHTTPUnmarshal-12            	   18180	     65867 ns/op	    5545 B/op	      69 allocs/op
+BenchmarkHTTPUnmarshal-12            	   18444	     65340 ns/op	    5543 B/op	      69 allocs/op
+BenchmarkHTTPUnmarshal-12            	   18320	     65672 ns/op	    5559 B/op	      69 allocs/op
+BenchmarkHTTPJSONDecode-12           	   18253	     65649 ns/op	    5745 B/op	      70 allocs/op
+BenchmarkHTTPJSONDecode-12           	   18314	     65362 ns/op	    5751 B/op	      70 allocs/op
+BenchmarkHTTPJSONDecode-12           	   18265	     65730 ns/op	    5770 B/op	      70 allocs/op
+BenchmarkHTTPJSONDecode-12           	   18206	     65585 ns/op	    5772 B/op	      70 allocs/op
+BenchmarkHTTPJSONDecode-12           	   18348	     65886 ns/op	    5768 B/op	      70 allocs/op
+BenchmarkJSONUnmarshal-12            	  566383	      2124 ns/op	    2432 B/op	      10 allocs/op
+BenchmarkJSONUnmarshal-12            	  558210	      2113 ns/op	    2432 B/op	      10 allocs/op
+BenchmarkJSONUnmarshal-12            	  569109	      2110 ns/op	    2432 B/op	      10 allocs/op
+BenchmarkJSONUnmarshal-12            	  573836	      2113 ns/op	    2432 B/op	      10 allocs/op
+BenchmarkJSONUnmarshal-12            	  564339	      2119 ns/op	    2432 B/op	      10 allocs/op
+BenchmarkJSONDecode-12               	  635416	      1874 ns/op	    1080 B/op	      10 allocs/op
+BenchmarkJSONDecode-12               	  666204	      1838 ns/op	    1080 B/op	      10 allocs/op
+BenchmarkJSONDecode-12               	  673485	      1837 ns/op	    1080 B/op	      10 allocs/op
+BenchmarkJSONDecode-12               	  667652	      1837 ns/op	    1080 B/op	      10 allocs/op
+BenchmarkJSONDecode-12               	  664269	      1839 ns/op	    1080 B/op	      10 allocs/op
+BenchmarkJSONUnmarshalParallel-12    	 1000000	      1097 ns/op	    2432 B/op	      10 allocs/op
+BenchmarkJSONUnmarshalParallel-12    	 1000000	      1058 ns/op	    2432 B/op	      10 allocs/op
+BenchmarkJSONUnmarshalParallel-12    	 1000000	      1072 ns/op	    2432 B/op	      10 allocs/op
+BenchmarkJSONUnmarshalParallel-12    	 1000000	      1019 ns/op	    2432 B/op	      10 allocs/op
+BenchmarkJSONUnmarshalParallel-12    	 1000000	      1075 ns/op	    2432 B/op	      10 allocs/op
+BenchmarkJSONDecodeParallel-12       	 1912267	       647 ns/op	    1080 B/op	      10 allocs/op
+BenchmarkJSONDecodeParallel-12       	 1819070	       691 ns/op	    1080 B/op	      10 allocs/op
+BenchmarkJSONDecodeParallel-12       	 1649226	       720 ns/op	    1080 B/op	      10 allocs/op
+BenchmarkJSONDecodeParallel-12       	 1661989	       721 ns/op	    1080 B/op	      10 allocs/op
+BenchmarkJSONDecodeParallel-12       	 1685457	       705 ns/op	    1080 B/op	      10 allocs/op
+PASS
+ok  	_/Users/steve/goprojects/go-json-bench	46.194s
